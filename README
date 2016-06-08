@@ -1,0 +1,33 @@
+Social Sharing-Framework
+=============
+## Features
+- [x] Facebook ( Login, getProfile, Text sharing, Image sharing, Linked Content Sharing, getFriend, Invite Friend, Logout )
+- [x] Twitter ( Login, GetProfile, Publish Post, Get user tweets, Get search tweets, Logout)
+
+
+Getting started
+----------------
+1. The SocialSharing  Folder contains TSGSocialSharing project. This example  project contains the sample code for facebook and twitter integration about how to use the social sharing framework and .
+2. To use the Sharing module in your application, open the Example project and copy the coresponding package of facebook or twitter in your project.
+3. Configure the related social sharing module in your project.
+
+
+Strategy configuration
+======================
+
+FACEBOOK
+--------
+1. Go through with below url and set up your application
+ https://developers.facebook.com/docs/android/getting-started/
+2. Use "TSGFacebookManger.java" class and use the required functions.
+
+TWITTER
+--------
+1. Install Fabric plugin.
+2. Follow the instruction for configure twitter in your project using fabric. https://www.youtube.com/watch?v=X9qvO0DIsdk
+3. Use "TSGTwitterManager.java" class and use the required functions.
+
+License
+---------
+Social Sharing Framework is KiwiTechnolgies Licensed  
+Copyright © 2016
