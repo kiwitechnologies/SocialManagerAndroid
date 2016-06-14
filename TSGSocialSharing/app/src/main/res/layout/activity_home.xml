@@ -1,40 +1,53 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
-    android:padding="25dp">
+              android:id="@+id/activity_main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:padding="25dp">
 
     <Button
         android:id="@+id/btnFacebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:minWidth="150dp"
-        android:text="Facebook" />
+        android:text="Facebook"/>
 
     <Button
         android:id="@+id/btnTwitter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:minWidth="150dp"
-        android:text="Twitter" />
+        android:text="Twitter"/>
 
     <Button
-        android:id="@+id/btnGooglePlus"
+        android:id="@+id/btnInstagram"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:minWidth="150dp"
-        android:text="Google Plus"
-        android:visibility="gone" />
+        android:text="Instagram"/>
 
     <Button
         android:id="@+id/btnLinkedIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:minWidth="150dp"
-        android:text="LinkedIn"
-        android:visibility="gone" />
+        android:text="LinkedIn"/>
+
+    <Button
+        android:id="@+id/btnGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="150dp"
+        android:text="Google"/>
+
+    <Button
+        android:id="@+id/btnGoogleCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="150dp"
+        android:text="Google Calendar"/>
+
 
 </LinearLayout>
 

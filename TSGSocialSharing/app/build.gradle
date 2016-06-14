@@ -9,6 +9,7 @@ buildscript {
 }
 apply plugin: 'com.android.application'
 apply plugin: 'io.fabric'
+apply plugin: 'com.google.gms.google-services'
 
 
 repositories {
@@ -21,7 +22,7 @@ android {
     buildToolsVersion "23.0.3"
     defaultConfig {
         applicationId "com.tsg.kiwitech.tsgsocialsharing"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -33,14 +34,50 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/ASL2.0'
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'com.facebook.android:facebook-android-sdk:4.+'
-    testCompile 'junit:junit:4.12'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    //for Twitter
     compile('com.twitter.sdk.android:twitter:1.13.2@aar') {
         transitive = true;
     }
+
+    //for Linkedin
+    compile project(':linkedin-sdk')
+
+    //support library
+    compile 'com.android.support:appcompat-v7:23.4.0'
+
+    //for Facebook
+    compile 'com.facebook.android:facebook-android-sdk:4.+'
+
+    //for Google Login
+    compile 'com.google.android.gms:play-services-auth:8.3.0'
+
+
+    //for Service client module
+    compile project(':TSGServiceClient')
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
+
+    //for Google calendar
+    compile('com.google.apis:google-api-services-calendar:v3-rev191-1.22.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    compile('com.google.api-client:google-api-client-android:1.22.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    compile 'com.google.android.gms:play-services-identity:8.3.0'
+    compile 'pub.devrel:easypermissions:0.1.5'
+
+    //for Unit test cases
+    testCompile 'junit:junit:4.12'
 }

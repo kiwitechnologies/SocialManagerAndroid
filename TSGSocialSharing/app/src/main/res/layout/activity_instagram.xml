@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/activity_instagram"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="20dp">
+
+    <Button
+        android:id="@+id/btnAuthorise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:minWidth="180dp"
+        android:text="Login"/>
+
+    <LinearLayout
+        android:id="@+id/options_root_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnGetProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="180dp"
+            android:text="Get Profile"/>
+
+        <Button
+            android:id="@+id/btnShareImageUsingIntent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="180dp"
+            android:text="Share image using intent"/>
+
+        <Button
+            android:id="@+id/btnShareVideoUsingIntent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="180dp"
+            android:text="Share video using intent"/>
+
+        <Button
+            android:id="@+id/btnUserProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="180dp"
+            android:text="User profile"/>
+
+        <Button
+            android:id="@+id/btnSelfRecentMedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="180dp"
+            android:text="Self Recent Media "/>
+
+        <Button
+            android:id="@+id/btnUserRecentMedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="180dp"
+            android:text="User Recent Media"/>
+
+        <Button
+            android:id="@+id/btnFollows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="180dp"
+            android:text="Follows"/>
+
+        <Button
+            android:id="@+id/btnFollowedBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="180dp"
+            android:text="Followed by"/>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="180dp"
+            android:text="Logout"/>
+    </LinearLayout>
+
+</LinearLayout>

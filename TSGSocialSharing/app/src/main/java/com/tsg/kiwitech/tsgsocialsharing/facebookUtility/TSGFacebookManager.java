@@ -50,6 +50,7 @@ public class TSGFacebookManager {
 
     /**
      * Initialisation
+     *
      * @param applicationContext
      */
     public static void init(Context applicationContext) {
@@ -58,6 +59,7 @@ public class TSGFacebookManager {
 
     /**
      * Initialisation
+     *
      * @param applicationContext
      * @param permissionsList
      */
@@ -68,12 +70,20 @@ public class TSGFacebookManager {
         PERMISSIONS_LIST = permissionsList;
     }
 
+    /**
+     * call this function from the {@link Activity#onActivityResult(int, int, Intent)} method
+     *
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     public static void onActivityResult(int requestCode, int resultCode, Intent data) {
         callbackManager.onActivityResult(requestCode, resultCode, data);
     }
 
     /**
      * login the facebook account
+     *
      * @param activity
      * @param callback
      */
@@ -82,12 +92,19 @@ public class TSGFacebookManager {
         LoginManager.getInstance().registerCallback(callbackManager, callback);
     }
 
+    /**
+     * return the facebook user profile data
+     *
+     * @return
+     */
     public static Profile getProfile() {
         return Profile.getCurrentProfile();
     }
 
+
     /**
-     * this method will share the mesage in background
+     * this method will share the message in background on user facebook wall
+     *
      * @param message
      * @param callback
      */
@@ -104,6 +121,7 @@ public class TSGFacebookManager {
 
     /**
      * Share the image with message on facebook user account in background
+     *
      * @param activity
      * @param bitmap
      * @param message
@@ -124,6 +142,7 @@ public class TSGFacebookManager {
 
     /**
      * Share the image with message on facebook user account in facebook application if available otherwise it will share it in background
+     *
      * @param bitmap
      * @param message
      * @param shareCallback
@@ -153,6 +172,7 @@ public class TSGFacebookManager {
 
     /**
      * share the linked content on facebook user account in facebook application if available otherwise it will share it in background
+     *
      * @param activity
      * @param contentURL
      * @param contentTitle
@@ -175,6 +195,7 @@ public class TSGFacebookManager {
 
     /**
      * share the linked content on facebook user account in background
+     *
      * @param contentURL
      * @param contentTitle
      * @param contentDescription
@@ -203,6 +224,7 @@ public class TSGFacebookManager {
 
     /**
      * check for the current user has publish permission or not
+     *
      * @return
      */
     public static boolean hasPublishPermissionForBackground() {
@@ -219,6 +241,7 @@ public class TSGFacebookManager {
 
     /**
      * Check weather the user is logged in or out
+     *
      * @return
      */
     public static boolean isLogedIn() {
@@ -227,6 +250,7 @@ public class TSGFacebookManager {
 
     /**
      * return the list of friends
+     *
      * @param callback
      */
     public static void getFriends(GraphRequest.Callback callback) {
@@ -240,6 +264,7 @@ public class TSGFacebookManager {
 
     /**
      * this function will invite the facebook friends for the application
+     *
      * @param activity
      * @param appLinkURL
      * @param previewImageURL

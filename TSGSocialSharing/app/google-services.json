@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "629185714232",
+    "project_id": "tsgsocialshare"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629185714232:android:cafe3dec68839018",
+        "android_client_info": {
+          "package_name": "com.tsg.kiwitech.tsgsocialsharing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629185714232-nbob2dcok4cs0suhjou50bmco21rmjsj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tsg.kiwitech.tsgsocialsharing",
+            "certificate_hash": "93815B0F0339C33F5A28A3EA8245948DF7F195A3"
+          }
+        },
+        {
+          "client_id": "629185714232-ee3nqg4vepukmavr0amtma0b84ns1t7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdY9F2Kt2wvS_Z2I8SHV16uKd25UfFX_c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

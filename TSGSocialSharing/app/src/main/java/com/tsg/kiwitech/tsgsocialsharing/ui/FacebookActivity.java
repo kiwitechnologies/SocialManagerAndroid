@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -25,7 +26,7 @@ import com.tsg.kiwitech.tsgsocialsharing.facebookUtility.TSGFacebookManager;
 
 import bolts.AppLinks;
 
-public class FacebookActivity extends Activity implements View.OnClickListener {
+public class FacebookActivity extends AppCompatActivity implements View.OnClickListener {
 
     private LinearLayout llOptionsLayout;
     private Button btnFBLogin;
@@ -106,7 +107,7 @@ public class FacebookActivity extends Activity implements View.OnClickListener {
 
                 @Override
                 public void onSuccess(LoginResult loginResult) {
-                    Toast.makeText(FacebookActivity.this, "Successfully Login", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(FacebookActivity.this, "Successfully login", Toast.LENGTH_SHORT).show();
                     setButtonsState();
                 }
 

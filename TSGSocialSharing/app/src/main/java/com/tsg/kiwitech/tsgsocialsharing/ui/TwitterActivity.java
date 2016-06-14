@@ -63,7 +63,7 @@ public class TwitterActivity extends AppCompatActivity implements View.OnClickLi
 
             @Override
             public void failure(TwitterException exception) {
-                Log.d("TwitterKit", "Login with Twitter failure", exception);
+                Log.d("TwitterKit", "login with Twitter failure", exception);
             }
         });
 
